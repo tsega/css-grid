@@ -97,6 +97,37 @@
 
 
   <style>
+    .albums {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .album {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 150px 1fr;
+      background-color: rgba(255,255,255, 0.7);
+      padding: 20px;
+    }
+    .album__artwork {
+      width: 100%;
+    }
+    .album__details {
+      display: grid;
+      align-content: center;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    .album__artist {
+      margin: 5px 0 0 0;
+      font-size: .9rem;
+    }
+    .album__desc {
+      margin: 0 0 5px 0;
+      font-weight: 300;
+      font-size: 1.1rem;
+    }
   </style>
 </body>
 
